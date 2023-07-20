@@ -10,15 +10,45 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 100%;
+        text-align: center;
+        }
+        .container {
+        display: grid;
+        align-items: center; 
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+        margin-bottom: 1em;
+        width: 100%;
         }
         body { margin-top: 0em; padding-top: 0em; font-family: 'Open Sans';}
     </style>
     
 </head>
 <body>
-    <img src="Images/Centurion-Systems-Logo.jpg" class="center" style="width: 10em; margin-bottom: 1em;"/>
-    <h1>Centurion Systems Release Notes</h1>
-    <p>This site is used to show Centurion System release notes</p>
+    <img src="Images/Centurion-Systems-Logo.jpg" class="center" style="width: 13em; margin-bottom: 5em;"/>
+    <div class="container; center"><h1>Centurion Systems Release Notes</h1></div>
+    <a href="MyCentsysPro/index.html">
+        <div class="container">
+            <div class="image">
+                <img src="Images/MyCentsysProAppIcon.png" class="center" style="width: 8em;"/>
+            </div>
+            <div >
+                <h2>MyCentsys Pro</h2>
+            </div>
+        </div>
+    </a>
+    <a href="MyCentsysRemote/index.html">
+        <div class="container">
+            <div class="image">
+                <img src="Images/MyCentsysRemoteAppIcon.png" class="center" style="width: 8em;"/>
+            </div>
+            <div >
+                <h2>MyCentsys Remote</h2>
+            </div>
+        </div>
+    </a>
 </body>
 </html>
