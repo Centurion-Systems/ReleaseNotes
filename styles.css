@@ -19,12 +19,47 @@ a {
     text-align: center;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: #82C341;
+  font-size: 2.5em;
+}
+
 .container {
     display: grid;
     align-items: center; 
+    vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.container-equal {
+    display: grid;
+    align-items: center; 
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    column-gap: 2em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.container-apps {
+    display: grid;
+    align-items: center; 
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns:  1fr 1fr 1fr;
     column-gap: 2em;
     margin-bottom: 1em;
     width: 100%;
@@ -34,3 +69,28 @@ a {
     width: 12em; 
     margin-bottom: 4em;
 }
+
+#mobileshow { 
+    display:none; 
+}
+
+@media screen and (max-width: 600px) {
+    #mobileshow { 
+    display:grid; }
+    .container {
+        grid-template-columns:  1fr 1fr ;
+        column-span: 2;
+    }
+}
+
+
+#desktopshow { 
+    display:none; 
+}
+
+@media screen and (min-width: 600px) {
+    #desktopshow { 
+    display:grid; }
+}
+
+
