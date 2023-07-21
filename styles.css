@@ -41,6 +41,10 @@ a {
     width: 100%;
 }
 
+.top-heading {
+    margin-bottom: 5em;
+}
+
 .container-equal {
     display: grid;
     align-items: center; 
@@ -79,7 +83,13 @@ a {
     display:grid; }
     .container {
         grid-template-columns:  1fr 1fr ;
-        column-span: 2;
+        column-gap: 1em;
+    }
+    .container-apps {
+        margin-bottom: 2em;
+    }
+    .top-heading {
+        margin-bottom: 3em;
     }
 }
 
